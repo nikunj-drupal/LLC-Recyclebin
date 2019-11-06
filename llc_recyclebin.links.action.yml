@@ -1,0 +1,5 @@
+llc_recyclebin.clear_recyclebin:
+  route_name: llc_recyclebin.clearall
+  title: 'Clear Recyclebin'
+  appears_on:
+    - llc_recyclebin.default

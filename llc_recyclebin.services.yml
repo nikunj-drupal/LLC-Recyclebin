@@ -1,0 +1,6 @@
+services:
+  llc_recyclebin.route_subscriber:
+    class: Drupal\llc_recyclebin\Routing\RouteSubscriber
+    arguments: ['@multiversion.manager']
+    tags:
+      - { name: event_subscriber, priority: -100 }

@@ -1,0 +1,20 @@
+llc_recyclebin:
+  id: llc_recyclebin
+  label: LLC Recyclebin 
+  group: publication
+  states:
+    new:
+      label: New
+    created:
+      label: Create
+    deleted:
+      label: Deleted
+  transitions:
+    create:
+      label: New Create
+      from: [new]
+      to:   created
+    delete:
+      label: Create
+      from: [new, created]
+      to:   deleted

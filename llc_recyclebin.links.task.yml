@@ -1,0 +1,5 @@
+llc_recyclebin.default:
+  title: Recyclebin
+  route_name: llc_recyclebin.default
+  base_route: system.admin_content
+  weight: 100

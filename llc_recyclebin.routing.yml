@@ -1,0 +1,18 @@
+llc_recyclebin.default:
+  path: '/admin/recyclebin'
+  defaults:
+    _controller: '\Drupal\llc_recyclebin\Controller\LlcRecyclebinController::entityList'
+    _title: 'Recyclebin'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: 'access unpublished content'
+llc_recyclebin.clearall:
+  path: '/admin/recyclebin/clear'
+  defaults:
+    _controller: '\Drupal\llc_recyclebin\Controller\LlcRecyclebinController::clearAll'
+    _title: 'Recyclebin Clear'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: 'administer site configuration'

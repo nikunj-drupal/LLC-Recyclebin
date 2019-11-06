@@ -1,0 +1,9 @@
+name: LLC Recyclebin
+description: Recreating the Recycle Bin functionality of your desktop in Drupal 8
+type: module
+core: 8.x
+package: Custom
+dependencies:
+- drupal:workflows
+- drupal:content_moderation
+- drupal:state_machine
